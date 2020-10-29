@@ -1,3 +1,3 @@
-# maskerku
+# Maskerku
 
 Tugas Akhir Pemvis.
