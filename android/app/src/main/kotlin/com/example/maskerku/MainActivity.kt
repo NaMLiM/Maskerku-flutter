@@ -1,4 +1,4 @@
-package com.example.maskerku
+package com.pemvis.maskerku
 
 import io.flutter.embedding.android.FlutterActivity
 
