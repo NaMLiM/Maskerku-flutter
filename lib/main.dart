@@ -79,31 +79,31 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            ListTile(
+            ListTile(//home
               leading: Icon(Icons.home),
               title: Text('Home'),
               onTap: () {
                 Navigator.of(context).pop();
               },
             ),
-            ListTile(
+            ListTile(//setting
               leading: Icon(Icons.settings),
               title: Text('Setting'),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
-            ListTile(
+            ListTile(//about us
               leading: Icon(Icons.account_box),
               title: Text('About Us'),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
-            Divider(
+            Divider(//line
               height: 5.0,
             ),
-            ListTile(
+            ListTile(//login/register
               leading: Icon(Icons.login),
               title: Text('Login/Register'),
               onTap: () {
