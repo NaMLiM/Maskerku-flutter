@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
         ],
         title: Text('Maskerku'),
       ),
-      drawer: MaskDrawer(),
+      drawer: DrawerCustom(),
     );
   }
 }

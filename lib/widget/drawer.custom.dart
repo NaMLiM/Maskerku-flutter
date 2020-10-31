@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MaskDrawer extends StatelessWidget {
-  const MaskDrawer({
+class DrawerCustom extends StatelessWidget {
+  const DrawerCustom({
     Key key,
   }) : super(key: key);
 
