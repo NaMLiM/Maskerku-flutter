@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "841448925975",
+    "firebase_url": "https://maskerku-id.firebaseio.com",
+    "project_id": "maskerku-id",
+    "storage_bucket": "maskerku-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841448925975:android:2cf13cb6a295882aa66552",
+        "android_client_info": {
+          "package_name": "com.pemvis.maskerku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841448925975-jrj24o3590l7omv1srjtj8gdb3v858uf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6GcZiXTwp91fjX88v0TEEHTkC8HQFtgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841448925975-jrj24o3590l7omv1srjtj8gdb3v858uf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
