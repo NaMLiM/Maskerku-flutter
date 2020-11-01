@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maskerku/page/auth/login.dart';
 
 class DrawerCustom extends StatelessWidget {
   const DrawerCustom({
@@ -58,7 +59,10 @@ class DrawerCustom extends StatelessWidget {
             leading: Icon(Icons.login),
             title: Text('Login/Register'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Login()),
+              );
             },
           ),
         ],
