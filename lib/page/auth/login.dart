@@ -117,20 +117,24 @@ class _LoginState extends State<Login> {
                   ),
                   Column(//button login
                     children: [
-                      SizedBox(height: 30),
-                      FlatButton(
+                      SizedBox(height: 40),
+                      SizedBox(
+                        width: double.infinity,
+                        height: 50,
+                        child: FlatButton(
                           onPressed: (){
                             Navigator.push(
                               context,
                               MaterialPageRoute(builder: (context) => Home()),
                             );
                           }, 
-                          child: Text('Login',style: TextStyle(fontSize: 17,color: Colors.white),),
+                          child: Text('Login',style: TextStyle(fontSize: 20,color: Colors.white),),
                           color: Colors.blue,
                           shape: RoundedRectangleBorder(
-                              borderRadius: new BorderRadius.circular(30.0)
+                              borderRadius: new BorderRadius.circular(8.0)
                             )
-                        )
+                        ),
+                      ),
                     ],
                   ),
                   Column( //text register
