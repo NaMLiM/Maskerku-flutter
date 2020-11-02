@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maskerku/page/auth/register.dart';
 import 'package:maskerku/page/home.dart';
 
 class Login extends StatefulWidget {
@@ -9,6 +10,12 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   //String _username = '';
   //String _password = '';
+  bool _obscureText = true; //for hide password
+  void _togglePasswordStatus() {
+    setState(() {
+      _obscureText = !_obscureText;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,7 +84,7 @@ class _LoginState extends State<Login> {
                   Column(//password
                     children: [
                       SizedBox(height: 30),
-                      TextField(
+                      TextFormField(
                         onChanged: (String value){
                           setState(() {
                             //_password = value;
@@ -95,8 +102,16 @@ class _LoginState extends State<Login> {
                           labelStyle: new TextStyle(
                             color: Colors.white70,
                             fontWeight: FontWeight.bold
-                          )
+                          ),
+                          suffixIcon:  IconButton(
+                            icon:Icon(_obscureText ? Icons.visibility_off:Icons.visibility),
+                            onPressed: _togglePasswordStatus,
+                            color: Colors.white,
+                            ),
                         ),
+                        validator: (val) => val.length < 6 ? 'Password too short.' : null,
+                        //onSaved: (val) => _password = val,
+                        obscureText: _obscureText,
                       )
                     ],
                   ),
@@ -130,7 +145,7 @@ class _LoginState extends State<Login> {
                         onTap: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => Home()),
+                              MaterialPageRoute(builder: (context) => Register()),
                             );
                         },
                         child: new Text(
