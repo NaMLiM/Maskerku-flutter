@@ -14,6 +14,7 @@ void main() {
   testWidgets('Widget Tapping Test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(Maskerku());
+    expect(find.text('Login'), findsNothing);
 
     // Search Drawer
     expect(find.byIcon(Icons.menu), findsOneWidget);
