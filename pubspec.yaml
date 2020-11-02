@@ -48,6 +48,8 @@ flutter:
   assets:
     - assets/images/icon-200px.png
     - assets/icon-bmkg.png
+    - assets/create-your-mask.png
+    - assets/choose-your-design.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
