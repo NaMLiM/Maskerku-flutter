@@ -55,9 +55,9 @@ class DrawerCustom extends StatelessWidget {
             height: 5.0,
           ),
           ListTile(
-            //Login/Register
+            //Login
             leading: Icon(Icons.login),
-            title: Text('Login/Register'),
+            title: Text('Login'),
             onTap: () {
               Navigator.push(
                 context,
