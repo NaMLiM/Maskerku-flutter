@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:maskerku/widget/drawer.custom.dart';
+//import 'package:maskerku/widget/drawer.custom.dart';
 
 class CreateMask extends StatefulWidget {
   @override
@@ -12,7 +12,7 @@ class _CreateMaskState extends State<CreateMask> {
       appBar: AppBar(
         title: Text('Create Your Mask'),
       ),
-      drawer: DrawerCustom(),
+      //drawer: DrawerCustom(),
     );
   }
 }
