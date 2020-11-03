@@ -45,10 +45,9 @@ class _DrawerState extends State<DrawerCustom> {
             leading: Icon(Icons.settings),
             title: Text('Setting'),
             onTap: () {
+              Navigator.of(context).pop();
               Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Setting())
-                );
+                  context, MaterialPageRoute(builder: (context) => Setting()));
             },
           ),
           ListTile(
