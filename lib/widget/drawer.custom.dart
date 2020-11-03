@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:maskerku/page/auth/login.dart';
 
-class DrawerCustom extends StatelessWidget {
+class DrawerCustom extends StatefulWidget {
+  @override
+  _DrawerState createState() => _DrawerState();
+
   const DrawerCustom({
     Key key,
   }) : super(key: key);
+}
 
+class _DrawerState extends State<DrawerCustom> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
