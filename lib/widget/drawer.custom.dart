@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:maskerku/page/auth/login.dart';
 import 'package:maskerku/page/setting.dart';
+import 'package:maskerku/page/about.dart';
 
 class DrawerCustom extends StatefulWidget {
   @override
@@ -55,7 +56,9 @@ class _DrawerState extends State<DrawerCustom> {
             leading: Icon(Icons.account_box),
             title: Text('About Us'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.of(context).pop();
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => About()));
             },
           ),
           Divider(
