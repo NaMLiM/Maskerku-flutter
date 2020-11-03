@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:maskerku/page/auth/login.dart';
+import 'package:maskerku/page/setting.dart';
 
 class DrawerCustom extends StatefulWidget {
   @override
@@ -44,7 +45,10 @@ class _DrawerState extends State<DrawerCustom> {
             leading: Icon(Icons.settings),
             title: Text('Setting'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Setting())
+                );
             },
           ),
           ListTile(
