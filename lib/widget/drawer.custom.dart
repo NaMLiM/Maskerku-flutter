@@ -68,14 +68,13 @@ class _DrawerState extends State<DrawerCustom> {
   }
 
   Widget _userDetails() {
-    return Container(
-      color: Colors.lightBlue,
-      child: ListView(children: [
+    return ListView(
+      children: [
         ListTile(
           title: Text("User Details"),
           leading: Icon(Icons.info_outline),
         )
-      ]),
+      ],
     );
   }
 

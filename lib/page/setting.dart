@@ -19,6 +19,15 @@ class _SettingState extends State<Setting>{
         ],
         title: Text('Setting'),
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              child: Text('asd'),
+            )
+          ],
+        )
+      ),
     );
   }
 }
