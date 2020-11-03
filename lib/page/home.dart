@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:maskerku/widget/drawer.custom.dart';
+import 'package:maskerku/page/createmask.dart';
 //import 'package:maskerku/widget/search.dart';
 
 class Home extends StatefulWidget {
@@ -39,7 +40,7 @@ class _HomeState extends State<Home> {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => Home()),
+                            MaterialPageRoute(builder: (context) => CreateMask()),
                           );
                         },
                         child: Image.asset('assets/create-your-mask.png',
