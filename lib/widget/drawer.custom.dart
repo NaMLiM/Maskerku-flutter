@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:maskerku/page/auth/login.dart';
+import 'package:maskerku/page/profile.dart';
 import 'package:maskerku/page/setting.dart';
 
 class DrawerCustom extends StatefulWidget {
@@ -31,6 +32,11 @@ class _DrawerState extends State<DrawerCustom> {
                 style: TextStyle(fontSize: 40.0),
               ),
             ),
+            onDetailsPressed: () {
+              Navigator.of(context).pop();
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Profile()));
+            },
           ),
           ListTile(
             //Home
