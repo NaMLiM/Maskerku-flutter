@@ -18,7 +18,7 @@ class About extends StatelessWidget {
                         flex: 3,
                         child: ClipRRect(
                             child: Image.asset(
-                                'assets/developer/profile-anam.png'),
+                                'assets/developer/profile-farhan.png'),
                             borderRadius: BorderRadius.circular(50.0))),
                     Expanded(
                         child: Column(
@@ -30,7 +30,7 @@ class About extends StatelessWidget {
                                   fontStyle: FontStyle.italic,
                                   color: const Color(0xFF6E6E6E)))
                         ])),
-                    Expanded(child: Text('Nafi\'ul Anam'))
+                    Expanded(child: Text('Farhan Reynaldi Valerian'))
                   ]),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black26, width: 1),
@@ -51,7 +51,7 @@ class About extends StatelessWidget {
                               flex: 3,
                               child: ClipRRect(
                                   child: Image.asset(
-                                      'assets/developer/profile-farhan.png'),
+                                      'assets/developer/profile-anam.png'),
                                   borderRadius: BorderRadius.circular(50.0))),
                           Expanded(
                               child: Column(
@@ -63,7 +63,7 @@ class About extends StatelessWidget {
                                         fontStyle: FontStyle.italic,
                                         color: const Color(0xFF6E6E6E)))
                               ])),
-                          Expanded(child: Text('Farhan Reynaldi'))
+                          Expanded(child: Text("Nafi'ul Anam"))
                         ]),
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.black26, width: 1),
