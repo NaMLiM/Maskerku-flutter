@@ -55,23 +55,12 @@ class _SettingState extends State<Setting>{
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Version', style: TextStyle(fontSize: 20),),
-                  Text('V0.1 (Beta)', style: TextStyle(color: Colors.black54),)
+                  Text('0.0.1 (Alpha)', style: TextStyle(color: Colors.black54),)
                 ],
               ),
               Divider(
                 //Line
                 height: 5.0,
-              ),
-              FlatButton(
-                onPressed: () => {},
-                color: Colors.orange,
-                padding: EdgeInsets.all(10.0),
-                child: Column( // Replace with a Row for horizontal icon + text
-                  children: <Widget>[
-                    Icon(Icons.add),
-                    Text("Add")
-                  ],
-                ),
               ),
             ],
           )
