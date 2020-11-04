@@ -38,7 +38,7 @@ class _DrawerState extends State<DrawerCustom> {
             }),
         ListTile(
             //About Us
-            leading: Icon(Icons.account_box),
+            leading: Icon(Icons.info_rounded),
             title: Text('About Us'),
             onTap: () {
               Navigator.of(context).pop();
