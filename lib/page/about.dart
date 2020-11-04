@@ -17,7 +17,8 @@ class About extends StatelessWidget {
                     Expanded(
                         flex: 3,
                         child: ClipRRect(
-                            child: Image.asset('assets/profile-anam.jpg'),
+                            child: Image.asset(
+                                'assets/developer/profile-anam.png'),
                             borderRadius: BorderRadius.circular(50.0))),
                     Expanded(
                         child: Column(
@@ -29,7 +30,7 @@ class About extends StatelessWidget {
                                   fontStyle: FontStyle.italic,
                                   color: const Color(0xFF6E6E6E)))
                         ])),
-                    Expanded(child: Text('Name here'))
+                    Expanded(child: Text('Nafi\'ul Anam'))
                   ]),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.black26, width: 1),
@@ -49,7 +50,8 @@ class About extends StatelessWidget {
                           Expanded(
                               flex: 3,
                               child: ClipRRect(
-                                  child: Image.asset('assets/profile-anam.jpg'),
+                                  child: Image.asset(
+                                      'assets/developer/profile-farhan.png'),
                                   borderRadius: BorderRadius.circular(50.0))),
                           Expanded(
                               child: Column(
@@ -61,7 +63,7 @@ class About extends StatelessWidget {
                                         fontStyle: FontStyle.italic,
                                         color: const Color(0xFF6E6E6E)))
                               ])),
-                          Expanded(child: Text('Name here'))
+                          Expanded(child: Text('Farhan Reynaldi'))
                         ]),
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.black26, width: 1),
@@ -76,7 +78,8 @@ class About extends StatelessWidget {
                           Expanded(
                               flex: 3,
                               child: ClipRRect(
-                                  child: Image.asset('assets/profile-anam.jpg'),
+                                  child: Image.asset(
+                                      'assets/developer/profile-fajar.png'),
                                   borderRadius: BorderRadius.circular(50.0))),
                           Expanded(
                               child: Column(
@@ -88,7 +91,7 @@ class About extends StatelessWidget {
                                         fontStyle: FontStyle.italic,
                                         color: const Color(0xFF6E6E6E)))
                               ])),
-                          Expanded(child: Text('Name here'))
+                          Expanded(child: Text('Fajar N.D.'))
                         ]),
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.black26, width: 1),
@@ -108,7 +111,8 @@ class About extends StatelessWidget {
                           Expanded(
                               flex: 3,
                               child: ClipRRect(
-                                  child: Image.asset('assets/profile-anam.jpg'),
+                                  child: Image.asset(
+                                      'assets/developer/profile-akis.png'),
                                   borderRadius: BorderRadius.circular(50.0))),
                           Expanded(
                             child: Column(
@@ -121,7 +125,7 @@ class About extends StatelessWidget {
                                           color: const Color(0xFF6E6E6E)))
                                 ]),
                           ),
-                          Expanded(child: Text('Name here'))
+                          Expanded(child: Text('Syafrur Mubarokh'))
                         ]),
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.black26, width: 1),
@@ -136,7 +140,8 @@ class About extends StatelessWidget {
                           Expanded(
                               flex: 3,
                               child: ClipRRect(
-                                  child: Image.asset('assets/profile-anam.jpg'),
+                                  child: Image.asset(
+                                      'assets/developer/profile-andiko.png'),
                                   borderRadius: BorderRadius.circular(50.0))),
                           Expanded(
                               child: Column(
@@ -148,7 +153,7 @@ class About extends StatelessWidget {
                                         fontStyle: FontStyle.italic,
                                         color: const Color(0xFF6E6E6E)))
                               ])),
-                          Expanded(child: Text('Name here'))
+                          Expanded(child: Text('Andiko P.'))
                         ]),
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.black26, width: 1),

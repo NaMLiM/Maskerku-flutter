@@ -71,9 +71,11 @@ flutter:
     - assets/masker-17.png
     - assets/masker-15.png
     - assets/masker-16.png
-    - assets/profile-anam.jpg
-    - assets/profile-farhan.png
-    
+    - assets/developer/profile-anam.png
+    - assets/developer/profile-farhan.png
+    - assets/developer/profile-fajar.png
+    - assets/developer/profile-andiko.png
+    - assets/developer/profile-akis.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
