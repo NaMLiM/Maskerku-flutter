@@ -39,43 +39,51 @@ class _HomeState extends State<Home> {
                   //runSpacing: 4.0, // gap between lines
                   children: [
                     Expanded(
-                        child: FlatButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => CreateMask()),
-                        );
-                      },
-                      child: Image.asset(
-                        'assets/create-your-mask.png',
-                        width: 150,
-                        height: 250,
+                        child: Container(
+                          margin: EdgeInsets.symmetric(horizontal: 10),
+                          child: FlatButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => CreateMask()),
+                              );
+                            },
+                            child: Image.asset(
+                              'assets/create-your-mask.png',
+                              width: 150,
+                              height: 250,
+                            ),
+                            shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                    color: Colors.black,
+                                    width: 3,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(15)),
+                          ),
+                        )
                       ),
-                      shape: RoundedRectangleBorder(
-                          side: BorderSide(
-                              color: Colors.black,
-                              width: 3,
-                              style: BorderStyle.solid),
-                          borderRadius: BorderRadius.circular(15)),
-                    )),
                     Expanded(
-                        child: FlatButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ChooseDesign()),
-                        );
-                      },
-                      child: Image.asset('assets/choose-your-design.png',
-                          width: 150, height: 250),
-                      shape: RoundedRectangleBorder(
-                          side: BorderSide(
-                              color: Colors.black,
-                              width: 3,
-                              style: BorderStyle.solid),
-                          borderRadius: BorderRadius.circular(15)),
-                    ))
+                        child: Container(
+                          margin: EdgeInsets.symmetric(horizontal: 10),
+                          child: FlatButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ChooseDesign()),
+                              );
+                            },
+                            child: Image.asset('assets/choose-your-design.png',
+                                width: 150, height: 250),
+                            shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                    color: Colors.black,
+                                    width: 3,
+                                    style: BorderStyle.solid),
+                                borderRadius: BorderRadius.circular(15)),
+                          ),
+                        )
+                      )
                   ],
                 ),
                 SizedBox(
