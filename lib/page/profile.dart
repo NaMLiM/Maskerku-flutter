@@ -9,9 +9,7 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Profile'),
-      ),
+      appBar: AppBar(title: Text('Profile')),
       drawer: DrawerCustom(),
     );
   }

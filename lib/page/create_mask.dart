@@ -8,11 +8,8 @@ class CreateMask extends StatefulWidget {
 
 class _CreateMaskState extends State<CreateMask> {
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Create Your Mask'),
-      ),
-      //drawer: DrawerCustom(),
-    );
+    return Scaffold(appBar: AppBar(title: Text('Create Your Mask'))
+        //drawer: DrawerCustom(),
+        );
   }
 }
