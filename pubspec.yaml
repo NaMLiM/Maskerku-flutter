@@ -55,9 +55,11 @@ flutter:
     - assets/terpopuler-3.png
     - assets/terpopuler-4.png
     - assets/terpopuler-5.png
-    - assets/profile-anam.jpg
-    - assets/profile-farhan.png
-    
+    - assets/developer/profile-anam.png
+    - assets/developer/profile-farhan.png
+    - assets/developer/profile-fajar.png
+    - assets/developer/profile-andiko.png
+    - assets/developer/profile-akis.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
