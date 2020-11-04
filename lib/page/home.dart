@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maskerku/page/choose_design.dart';
 import 'package:maskerku/widget/drawer.custom.dart';
 import 'package:maskerku/page/create_mask.dart';
 //import 'package:maskerku/widget/search.dart';
@@ -58,7 +59,7 @@ class _HomeState extends State<Home> {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => Home()),
+                            MaterialPageRoute(builder: (context) => ChooseDesign()),
                           );
                         },
                         child: Image.asset('assets/choose-your-design.png',
@@ -166,7 +167,8 @@ class _HomeState extends State<Home> {
                           ),
                         ],
                       ),
-                  )
+                  ),
+                  
                 ],
               ),
             )
