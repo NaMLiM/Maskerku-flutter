@@ -85,7 +85,7 @@ class _DrawerState extends State<DrawerCustom> {
       child: Column(children: [
         UserAccountsDrawerHeader(
           accountName: Text("Anonim"),
-          accountEmail: Text("andicol@gmail.com"),
+          accountEmail: Text("anonim@mail.com"),
           currentAccountPicture: CircleAvatar(
             backgroundColor:
                 Theme.of(context).platform == TargetPlatform.android

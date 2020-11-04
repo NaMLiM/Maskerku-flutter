@@ -29,6 +29,7 @@ class _HomeState extends State<Home> {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Row(
                   //Create your mask & Choose your design
@@ -45,7 +46,7 @@ class _HomeState extends State<Home> {
                         },
                         child: Image.asset('assets/create-your-mask.png',
                             width: 150,
-                            height: 250
+                            height: 250,
                         ),
                         shape: RoundedRectangleBorder(side: BorderSide(
                           color: Colors.black,
@@ -165,8 +166,7 @@ class _HomeState extends State<Home> {
                           ),
                         ],
                       ),
-                    )
-                
+                  )
                 ],
               ),
             )
