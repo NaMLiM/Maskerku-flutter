@@ -38,40 +38,44 @@ class _HomeState extends State<Home> {
                   //spacing: 8.0, // gap between adjacent chips
                   //runSpacing: 4.0, // gap between lines
                   children: [
-                    FlatButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => CreateMask()),
-                          );
-                        },
-                        child: Image.asset('assets/create-your-mask.png',
-                            width: 150,
-                            height: 250,
-                        ),
-                        shape: RoundedRectangleBorder(side: BorderSide(
-                          color: Colors.black,
-                          width: 3,
-                          style: BorderStyle.solid
-                        ), borderRadius: BorderRadius.circular(15)),
-                    ),
-                    FlatButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => ChooseDesign()),
-                          );
-                        },
-                        child: Image.asset('assets/choose-your-design.png',
-                            width: 150,
-                            height: 250
-                        ),
-                        shape: RoundedRectangleBorder(side: BorderSide(
-                          color: Colors.black,
-                          width: 3,
-                          style: BorderStyle.solid
-                        ), borderRadius: BorderRadius.circular(15)),
-                    ),
+                    Expanded(
+                        child: FlatButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => CreateMask()),
+                        );
+                      },
+                      child: Image.asset(
+                        'assets/create-your-mask.png',
+                        width: 150,
+                        height: 250,
+                      ),
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                              color: Colors.black,
+                              width: 3,
+                              style: BorderStyle.solid),
+                          borderRadius: BorderRadius.circular(15)),
+                    )),
+                    Expanded(
+                        child: FlatButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ChooseDesign()),
+                        );
+                      },
+                      child: Image.asset('assets/choose-your-design.png',
+                          width: 150, height: 250),
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                              color: Colors.black,
+                              width: 3,
+                              style: BorderStyle.solid),
+                          borderRadius: BorderRadius.circular(15)),
+                    ))
                   ],
                 ),
                 SizedBox(
@@ -99,82 +103,75 @@ class _HomeState extends State<Home> {
                             Icon(Icons.keyboard_arrow_right)
                           ],
                         ))
+                  ],
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      FlatButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Home()),
+                            );
+                          },
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset('assets/terpopuler-1.png'),
+                          )),
+                      FlatButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Home()),
+                            );
+                          },
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset('assets/terpopuler-2.png'),
+                          )),
+                      FlatButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Home()),
+                            );
+                          },
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset('assets/terpopuler-3.png'),
+                          )),
+                      FlatButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Home()),
+                            );
+                          },
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset('assets/terpopuler-4.png'),
+                          )),
+                      FlatButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => Home()),
+                            );
+                          },
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Image.asset('assets/terpopuler-5.png'),
+                          )),
                     ],
                   ),
-                  SingleChildScrollView(
-                      scrollDirection: Axis.horizontal,
-                      child: Row(
-                        children: [
-                          FlatButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => Home()),
-                              );
-                            },
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(15),
-                              child: Image.asset('assets/terpopuler-1.png'),
-                            )
-                          ),
-                          FlatButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => Home()),
-                              );
-                            },
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(15),
-                              child: Image.asset('assets/terpopuler-2.png'),
-                            )
-                          ),
-                          FlatButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => Home()),
-                              );
-                            },
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(15),
-                              child: Image.asset('assets/terpopuler-3.png'),
-                            )
-                          ),
-                          FlatButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => Home()),
-                              );
-                            },
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(15),
-                              child: Image.asset('assets/terpopuler-4.png'),
-                            )
-                          ),
-                          FlatButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => Home()),
-                              );
-                            },
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(15),
-                              child: Image.asset('assets/terpopuler-5.png'),
-                            )
-                          ),
-                        ],
-                      ),
-                  ),
-                  
-                ],
-              ),
-            )
-          ],
-        )
-      ),
+                ),
+              ],
+            ),
+          )
+        ],
+      )),
     );
   }
 }
