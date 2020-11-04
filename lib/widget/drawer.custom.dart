@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:maskerku/page/auth/login.dart';
-import 'package:maskerku/page/profile.dart';
+//import 'package:maskerku/page/profile.dart';
 import 'package:maskerku/page/setting.dart';
 import 'package:maskerku/page/about.dart';
 
