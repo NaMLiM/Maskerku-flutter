@@ -69,6 +69,7 @@ class _DrawerState extends State<DrawerCustom> {
 
   Widget _userDetails() {
     return ListView(
+      padding: EdgeInsets.zero,
       children: [
         ListTile(
           title: Text("User Details"),
