@@ -50,6 +50,12 @@ flutter:
     - assets/icon-bmkg.png
     - assets/create-your-mask.png
     - assets/choose-your-design.png
+    - assets/terpopuler-1.png
+    - assets/terpopuler-2.png
+    - assets/terpopuler-3.png
+    - assets/terpopuler-4.png
+    - assets/terpopuler-5.png
+    
 
   # To add assets to your application, add an assets section, like this:
   # assets:

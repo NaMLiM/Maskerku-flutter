@@ -44,7 +44,8 @@ class _HomeState extends State<Home> {
                           );
                         },
                         child: Image.asset('assets/create-your-mask.png',
-                            width: 150
+                            width: 150,
+                            height: 250
                         ),
                         shape: RoundedRectangleBorder(side: BorderSide(
                           color: Colors.black,
@@ -60,7 +61,8 @@ class _HomeState extends State<Home> {
                           );
                         },
                         child: Image.asset('assets/choose-your-design.png',
-                            width: 150
+                            width: 150,
+                            height: 250
                         ),
                         shape: RoundedRectangleBorder(side: BorderSide(
                           color: Colors.black,
@@ -78,7 +80,7 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Terpopuler :",
+                      "Most Popular :",
                       style:
                           TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                     ),
@@ -96,7 +98,75 @@ class _HomeState extends State<Home> {
                           ],
                         ))
                     ],
-                  )
+                  ),
+                  SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Home()),
+                              );
+                            },
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: Image.asset('assets/terpopuler-1.png'),
+                            )
+                          ),
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Home()),
+                              );
+                            },
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: Image.asset('assets/terpopuler-2.png'),
+                            )
+                          ),
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Home()),
+                              );
+                            },
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: Image.asset('assets/terpopuler-3.png'),
+                            )
+                          ),
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Home()),
+                              );
+                            },
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: Image.asset('assets/terpopuler-4.png'),
+                            )
+                          ),
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Home()),
+                              );
+                            },
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: Image.asset('assets/terpopuler-5.png'),
+                            )
+                          ),
+                        ],
+                      ),
+                    )
+                
                 ],
               ),
             )
