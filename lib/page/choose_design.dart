@@ -408,18 +408,18 @@ class _ChooseDesignState extends State<ChooseDesign> {
                                 child: Image.asset('assets/masker-16.png'),
                               ),
                               Text('Masker Wibu',textAlign: TextAlign.center)
-                            ],
+                            ]
                           )
-                        ),
+                        )
                       )
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+                    )
+                  ]
+                )
+              )
+            ]
+          )
+        )
+      )
     );
   }
 }
