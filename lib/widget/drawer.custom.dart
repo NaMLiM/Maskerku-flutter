@@ -17,50 +17,44 @@ class _DrawerState extends State<DrawerCustom> {
   bool showUserDetails = false;
 
   Widget _drawerList() {
-    return ListView(
-      padding: EdgeInsets.zero,
-      children: <Widget>[
-        ListTile(
-            //Home
-            leading: Icon(Icons.home),
-            title: Text('Home'),
-            onTap: () {
-              Navigator.of(context).pop();
-            }),
-        ListTile(
-            //Setting
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
-            onTap: () {
-              Navigator.of(context).pop();
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Setting()));
-            }),
-        ListTile(
-            //About Us
-            leading: Icon(Icons.info_rounded),
-            title: Text('About Us'),
-            onTap: () {
-              Navigator.of(context).pop();
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => About()));
-            }),
-        Divider(
+    return ListView(padding: EdgeInsets.zero, children: <Widget>[
+      ListTile(
+          //Home
+          leading: Icon(Icons.home),
+          title: Text('Home'),
+          onTap: () {
+            Navigator.of(context).pop();
+          }),
+      ListTile(
+          //Setting
+          leading: Icon(Icons.settings),
+          title: Text('Settings'),
+          onTap: () {
+            Navigator.of(context).pop();
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Setting()));
+          }),
+      ListTile(
+          //About Us
+          leading: Icon(Icons.info_rounded),
+          title: Text('About Us'),
+          onTap: () {
+            Navigator.of(context).pop();
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => About()));
+          }),
+      Divider(
           //Line
-          height: 5.0,
-        ),
-        ListTile(
-            //Login
-            leading: Icon(Icons.login),
-            title: Text('Login'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Login()),
-              );
-            }),
-      ],
-    );
+          height: 5.0),
+      ListTile(
+          //Login
+          leading: Icon(Icons.login),
+          title: Text('Login'),
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Login()));
+          })
+    ]);
   }
 
   Widget _userDetails() {
