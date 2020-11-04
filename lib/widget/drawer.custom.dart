@@ -59,7 +59,7 @@ class _DrawerState extends State<DrawerCustom> {
 
   Widget _userDetails() {
     return ListView(padding: EdgeInsets.zero, children: [
-      ListTile(title: Text("User Details"), leading: Icon(Icons.info_outline))
+      ListTile(title: Text("User Details"), leading: Icon(Icons.account_circle))
     ]);
   }
 
