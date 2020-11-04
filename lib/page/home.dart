@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:maskerku/widget/drawer.custom.dart';
-import 'package:maskerku/page/createmask.dart';
+import 'package:maskerku/page/create_mask.dart';
 //import 'package:maskerku/widget/search.dart';
 
 class Home extends StatefulWidget {
@@ -44,7 +44,14 @@ class _HomeState extends State<Home> {
                           );
                         },
                         child: Image.asset('assets/create-your-mask.png',
-                            width: 150)),
+                            width: 150
+                        ),
+                        shape: RoundedRectangleBorder(side: BorderSide(
+                          color: Colors.black,
+                          width: 3,
+                          style: BorderStyle.solid
+                        ), borderRadius: BorderRadius.circular(15)),
+                    ),
                     FlatButton(
                         onPressed: () {
                           Navigator.push(
@@ -53,7 +60,14 @@ class _HomeState extends State<Home> {
                           );
                         },
                         child: Image.asset('assets/choose-your-design.png',
-                            width: 150)),
+                            width: 150
+                        ),
+                        shape: RoundedRectangleBorder(side: BorderSide(
+                          color: Colors.black,
+                          width: 3,
+                          style: BorderStyle.solid
+                        ), borderRadius: BorderRadius.circular(15)),
+                    ),
                   ],
                 ),
                 SizedBox(
